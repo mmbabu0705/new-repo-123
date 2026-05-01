@@ -1,0 +1,219 @@
+=============================================
+Continuous Integration (CI) – Complete Notes
+=============================================
+
+========================
+1. Manual Build Process
+========================
+
+=> Traditional manual build processes had several challenges:
+
+=> Developers had to wait until the entire software was developed to see test results.
+
+=> When bugs were found, developers had to re-check the entire source code to identify the issue.
+
+=> Since the whole process was manual, the chances of frequent failures were high.
+
+=> The software delivery process became slow and inefficient.
+
+Note: To overcome these challenges, Continuous Integration (CI) was introduced.
+
+
+====================================
+2. How Continuous Integration Works
+====================================
+
+Continuous Integration follows these steps:
+
+=> The entire codebase is divided into smaller, manageable parts.
+
+=> Developers make changes to these smaller code segments.
+
+=> These changes are integrated into a central repository multiple times a day.
+
+=> Every integration triggers automated builds and automated tests.
+
+=> If any errors or bugs occur, developers receive immediate notifications.
+
+Note: This approach improves team coordination, development speed, and overall accuracy.
+
+===================================
+3. What is Continuous Integration?
+===================================
+
+Continuous Integration (CI) is a software development practice where:
+
+=> Each developer frequently integrates (merges) their code into a shared repository—usually at least once per day.
+
+=> Every integration is automatically verified through builds and tests.
+
+=> Integration issues are detected early, reducing the risk of major problems.
+
+Note: The overall software development process becomes smoother and faster.
+
+
+======================================
+4. Benefits of Continuous Integration
+======================================
+
+=> Immediate bug detection
+
+=> Frequent code commits
+
+=> Less context switching for developers
+
+=> Reduced time spent on debugging
+
+=> Minimized integration problems
+
+=> Faster and more reliable software delivery
+
+
+================================
+5. Continuous Integration Tools
+================================
+
+1. Jenkins
+
+2. Teamcity 
+
+3. Bamboo
+
+4. Gitlab CI
+
+5. Circe CI 
+
+
+===========================
+6. Introduction to jenkins
+===========================
+
++++++++++++++++++
+What is Jenkins?
++++++++++++++++++
+
+=> Jenkins is an open-source automation server used to automate software build, test, and deployment processes.
+=> It is written in Java and is one of the most popular tools for CI/CD automation.
+
+==================================
+What is CI/CD? (Interview Answer)
+==================================
+
+=> CI/CD stands for Continuous Integration and Continuous Delivery/Deployment.
+
+=> It is a process used in software development to automate integration, testing, and deployment.
+
+"""""""""""""""""""""""""""""
+CI – Continuous Integration
+"""""""""""""""""""""""""""""
+
+=> Developers frequently integrate (merge) their code, often multiple times a day.
+
+=> After each integration, automated builds and automated tests run.
+
+=> Bugs and integration issues are detected immediately.
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+CD – Continuous Delivery / Continuous Deployment
+"""""""""""""""""""""""""""""""""""""""""""""""""
+
+=> After the code is built and tested, the software is automatically packaged and made ready for deployment (Continuous Delivery).
+
+=> In the advanced stage, the code is automatically deployed to the production environment as well (Continuous Deployment).
+
+
+
+=======================
+Why Jenkins is Popular?
+=======================
+
+=> Automates repetitive tasks
+
+=> Supports building complete CI/CD pipelines
+
+=> Gives immediate feedback on build success or failure
+
+=> Ensures fast, reliable, and consistent delivery
+
+=> Offers 1800+ plugins to integrate with almost any development, testing, or deployment tool
+
+
+=========================
+Jenkins Origin (History)
+=========================
+
+Developer: Kohsuke Kawaguchi
+
+Developed in: 2004
+
+Original name: Hudson
+
+Renamed to Jenkins: 2011 (after a naming dispute with Oracle)
+
+Purpose: To automate manual builds and reduce frequent failures in software teams
+
+
+=================
+Jenkins Features
+=================
+
+Below are the main features offered by Jenkins:
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+1. Continuous Integration and Continuous Delivery
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Jenkins can function as a simple CI server or be expanded into a complete continuous delivery (CD) hub for any type of project.
+It supports the automation of build, test, and deployment processes.
+
+"""""""""""
+2. Plugins
+"""""""""""
+
+Jenkins has a vast plugin ecosystem with hundreds of plugins available.
+This allows integration with almost every tool used in the CI/CD pipeline—such as Git, Docker, Kubernetes, Maven, AWS, and many more.
+
+"""""""""""""""""""""
+3. Easy Installation
+"""""""""""""""""""""
+
+Jenkins is very simple to install.
+It can be installed using:
+
+Native system packages
+
+Docker containers
+
+Or run standalone on any machine with a Java Runtime Environment (JRE)
+
+""""""""""""""""""""""
+4. Easy Configuration
+""""""""""""""""""""""
+
+Jenkins provides a user-friendly web-based interface, making setup and configuration extremely easy.
+Most tasks can be configured through simple UI options without needing complex scripts.
+
+""""""""""""""
+5. Extensible
+""""""""""""""
+
+Jenkins is highly extensible.
+With the help of plugins, it can be customized to support countless automation tasks and integrate with any modern DevOps tool.
+
+""""""""""""""""""""""
+6. Distributed Builds
+""""""""""""""""""""""
+
+Jenkins supports a master-agent (distributed) architecture.
+It can distribute workloads across multiple machines (agents), allowing:
+
+Faster builds
+
+Parallel execution
+
+Efficient resource usage
+
+
+
+
