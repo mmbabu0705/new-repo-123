@@ -1,0 +1,216 @@
+====================================================
+            SHELL SCRIPTING – SESSION 1
+====================================================
+
+++++++++++++++++
+WHAT IS A SHELL
+++++++++++++++++
+
+• Shell is a program that reads commands given by the user.
+
+• Shell verifies the command and sends instructions to the kernel.
+
+• If the command is invalid, the shell displays an error.
+
+• Kernel executes commands using system hardware.
+
+• Shell acts as a mediator between the User and the Kernel.
+
+----------------------------------------------------
+
+++++++++++++++++
+WHAT IS SCRIPTING
+++++++++++++++++
+
+• Scripting means a set of commands written in a file for execution.
+
+• Scripting is used to automate routine work.
+
+Example commands:
+date - what is today's date?
+cal - What is the calender?
+whoami - Whatis my current user name?
+pwd - wht is my current directory?
+ls -l - what are the files available
+
+Instead of executing these commands manually every day,
+we can store them in a file and execute that file.
+
+The file that contains commands is called a Script File.
+
+----------------------------------------------------
+
+++++++++++++++++++++++++
+WHAT IS SHELL SCRIPTING
+++++++++++++++++++++++++
+
+• Shell scripting is writing multiple commands in a file.
+
+• When executed, the shell reads and verifies command syntax.
+
+• Shell sends instructions to the Kernel.
+
+• Kernel interacts with hardware to perform operations.
+
+----------------------------------------------------
+
+****************
+TYPES OF SHELLS
+****************
+
+Several shells are available in Linux OS:
+
+1) Bourne Shell (sh)
+2) Bash Shell (bash)
+3) Korn Shell (ksh)
+4) C Shell (csh)
+5) TENEX C Shell (tcsh)
+6) Z Shell (zsh)
+
+Display all shells:
+cat /etc/shells
+
+Display default shell:
+echo $SHELL
+
+echo → prints output
+$SHELL → environment variable
+
+Note:
+Most commonly used shell = BASH
+
+Shell scripts usually use ".sh" extension
+(extension is not mandatory)
+
+----------------------------------------------------
+
+****************************************
+FIRST SHELL SCRIPT PROGRAM
+****************************************
+
+Create script:
+vi task.sh
+
+Add commands:
+whoami
+date
+pwd
+ls -l
+
+Save and close:
+ESC → :wq!
+
+Run script (Method 1):
+sh task.sh
+
+If permission denied:
+chmod u+x task.sh
+
+Run script (Method 2):
+./task.sh
+
+----------------------------------------------------
+
+###################################
+WHAT IS SHEBANG (#!)
+###################################
+
+• Shebang specifies which shell should execute the script.
+
+Syntax:
+#!/bin/bash
+
+#! = Hash + Exclamation mark
+
+Pronounced as "She-bang"
+
+----------------------------------------------------
+
+**************************
+SHELL SCRIPT – 2
+**************************
+
+vi script2.sh
+
+#!/bin/bash
+echo "Welcome to Scripting"
+echo "Scripting is used to automate regular work"
+echo "Scripting requires a lot of practice"
+
+Run:
+sh script2.sh
+OR
+chmod u+x script2.sh
+./script2.sh
+
+----------------------------------------------------
+
+**************************
+SHELL SCRIPT – 3
+**************************
+
+User Input Example
+
+vi script3.sh
+
+#!/bin/bash
+echo "Enter Your Name:"
+read Name
+echo "Good Morning $Name"
+
+----------------------------------------------------
+
+**************************
+SHELL SCRIPT – 4
+**************************
+
+Arithmetic Operations
+
+Fixed values:
+
+#!/bin/bash
+a=10
+b=20
+c=$(($a+$b))
+echo "Sum of $a and $b is = $c"
+
+----------------------------------------------------
+
+User Input Version:
+
+#!/bin/bash
+echo "Enter First Number"
+read a
+
+echo "Enter Second Number"
+read b
+
+c=$(($a+$b))
+echo "Sum = $c"
+
+----------------------------------------------------
+
+SUBTRACTION
+
+c=$(($a-$b))
+echo "Difference = $c"
+
+----------------------------------------------------
+
+MULTIPLICATION
+
+c=$(($a*$b))
+echo "Product = $c"
+
+----------------------------------------------------
+
+DIVISION
+
+c=$(($a/$b))
+echo "Division = $c"
+
+----------------------------------------------------
+
+=====================
+END OF SESSION – 1
+=====================
